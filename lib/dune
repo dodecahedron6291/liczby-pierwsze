@@ -1,0 +1,10 @@
+(library
+ (name lib)
+ (libraries commons)
+ (modules lista_pierwszych pierwszosc))
+
+(rule
+ (targets lista_pierwszych.ml)
+ (action
+  (with-stdout-to %{targets}
+   (run %{exe:../generator/gen.exe} 100000))))

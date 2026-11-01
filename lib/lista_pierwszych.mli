@@ -1,0 +1,1 @@
+val lista_pierwszych : int list

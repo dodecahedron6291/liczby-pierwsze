@@ -1,0 +1,1 @@
+val pierwszosc : int -> unit
